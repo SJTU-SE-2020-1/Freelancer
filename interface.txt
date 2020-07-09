@@ -7,3 +7,21 @@ payment lower:
 payment higher:
 description:
 }
+2.
+  “/register”
+    from front：{
+      agreement:true
+      confirm:"123456"
+      credit_card:"123"
+      email:"123456@qq.com"
+      name:"12345"
+      password:"123456"
+      }
+3.
+  “/login”
+  from front:{
+    password:"123456"
+    remember:true
+    username:"123"
+   }
+  
