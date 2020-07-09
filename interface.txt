@@ -1,0 +1,9 @@
+1. 
+"/postWork" 
+postbody:{
+u_id: (user id)
+title:
+payment lower:
+payment higher:
+description:
+}
