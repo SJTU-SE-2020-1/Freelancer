@@ -8,8 +8,6 @@ drop table if exists administrator;
 
 drop table if exists do_work;
 
-drop table if exists issue_work;
-
 drop table if exists need_skill;
 
 drop table if exists propose_work;
@@ -45,16 +43,6 @@ create table do_work
    end_time             timestamp,
    payment              float not null,
    review               char(100) not null,
-   primary key (u_id, w_id)
-);
-
-/*==============================================================*/
-/* Table: issue_work                                            */
-/*==============================================================*/
-create table issue_work
-(
-   u_id                 int not null,
-   w_id                 int not null,
    primary key (u_id, w_id)
 );
 
@@ -125,6 +113,7 @@ create table user_skill
 create table work
 (
    w_id                 int not null AUTO_INCREMENT,
+   u_id                 int not null,
    title                char(25) not null,
    payment_lower        float not null,
    payment_higher       Float  not null,
@@ -135,16 +124,12 @@ create table work
    primary key (w_id)
 );
 
+alter table work comment 'status: 0(尚未接单), 1(进行中), 2(已完成)';
+
 alter table do_work add constraint FK_do_work foreign key (u_id)
       references user (u_id) on delete restrict on update restrict;
 
 alter table do_work add constraint FK_do_work2 foreign key (w_id)
-      references work (w_id) on delete restrict on update restrict;
-
-alter table issue_work add constraint FK_issue_work foreign key (u_id)
-      references user (u_id) on delete restrict on update restrict;
-
-alter table issue_work add constraint FK_issue_work2 foreign key (w_id)
       references work (w_id) on delete restrict on update restrict;
 
 alter table need_skill add constraint FK_need_skill foreign key (w_id)
@@ -164,5 +149,8 @@ alter table user_skill add constraint FK_user_skill foreign key (u_id)
 
 alter table user_skill add constraint FK_user_skill2 foreign key (s_id)
       references skill (s_id) on delete restrict on update restrict;
+
+alter table work add constraint FK_work foreign key (u_id)
+      references user (u_id) on delete restrict on update restrict;
 
 SET FOREIGN_KEY_CHECKS = 1;
