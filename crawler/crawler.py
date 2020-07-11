@@ -87,9 +87,11 @@ def getDetail(html, url):
     detailDic = dict()
     if not soup.find(class_='PageProjectViewLogout-header-title'):
         return None
+    detailDic['budget'] = soup.find(class_='PageProjectViewLogout-header-byLine').get_text()[3:]
     detailDic['proName'] = soup.find(class_='PageProjectViewLogout-header-title').string
     detailDic['url'] = url
     print(detailDic['proName'], detailDic['url'], end=" ")
+    print(detailDic['budget'], end=" ")
     proDescription = ""
     for s in soup.find(class_='PageProjectViewLogout-detail').stripped_strings:
         proDescription += s + " "
@@ -145,6 +147,8 @@ def mysqlWrite(detailDic, db, cursor):
         return
     cursor.execute("SELECT MAX(`MATCH`.id) FROM `MATCH`")
     initID = cursor.fetchall()[0][0]
+    if not initID:
+        initID = 0
     match = ";"
     for devDic in detailDic['devList']:
         sql = "INSERT INTO `MATCH`(projectUrl, developerUrl, isAward, description) VALUES (%s,%s,%s,%s)"
@@ -161,8 +165,8 @@ def mysqlWrite(detailDic, db, cursor):
             sql = "update `developer` set `project`=CONCAT(`project`, %s) where `url`=%s"
             params = (detailDic['url']+";", devDic['url'])
             sqlExe(db, cursor, sql, params)
-    sql = "INSERT INTO `PROJECT`(url, name, tag, description, `match`) VALUES (%s,%s,%s,%s,%s)"
-    params = (detailDic['url'], detailDic['proName'], detailDic['proTag'], detailDic['proDescription'], match)
+    sql = "INSERT INTO `PROJECT`(url, name, budget, tag, description, `match`) VALUES (%s,%s,%s,%s,%s, %s)"
+    params = (detailDic['url'], detailDic['proName'], detailDic['budget'], detailDic['proTag'], detailDic['proDescription'], match)
     sqlExe(db, cursor, sql, params)
     print("写入完成")
 
@@ -191,7 +195,7 @@ class NetError(Exception):
 
 
 def crawler(page, num):
-    db = pymysql.connect("localhost", "root", "1234", "freelancer")
+    db = pymysql.connect("localhost", "root", "1234", "freelancer_update")
     cursor = db.cursor()
     for i in range(page, page+200):
         writelog(i, 1)
@@ -205,7 +209,7 @@ def crawler(page, num):
             if (i == page) and (n < num):
                 n += 1
                 continue
-            print("{}/{} ".format(n, total), end=" ")
+            print("{}/{} ".format(n, total))
             html = getHTML("https://www.freelancer.cn"+url)
             if html == "":
                 exit_error(db, i, n)
