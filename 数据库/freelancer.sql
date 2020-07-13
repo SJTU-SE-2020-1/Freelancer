@@ -78,7 +78,7 @@ create table skill
 (
    s_id                 int not null AUTO_INCREMENT,
    skill_name           char(30) not null,
-   key                  int not null default 13,
+   category                  int not null default 13,
    primary key (s_id)
 );
 
