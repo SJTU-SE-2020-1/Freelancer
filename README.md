@@ -36,3 +36,4 @@
 
 ### day 1:
 1. 谢厚：后端User的登录和注册测试，Work全部展示，已发布和已完成work展示的测试，对work的命名由驼峰改为下划线。
+2.蒋钊：整合数据，更新skill，user，work表，整合了propose_work表数据。
