@@ -38,3 +38,6 @@
 2. 蒋钊：整合数据，更新skill，user，work表，整合了propose_work表数据。
 3. 张澳：添加avatarlist组件，skill选择组件，修改header元素，主页项目组件，预计明天任务是完成主页面，个人信息详情等页面的内容
 4. 郑世民：研究一下junit测试，测试了后端部分的接口。
+
+## Week2-day2总结
+1. 郑世民：开始使用junit测试后端接口，测试了workcontroller的接口。
