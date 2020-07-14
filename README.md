@@ -40,4 +40,5 @@
 
 ## Week2-day2总结
 1. 郑世民：开始使用junit测试后端接口，测试了workcontroller的接口。
-2.蒋钊：完成了剩余数据的整合，整合了user_skill,need skill,do_work表数据。
+2. 蒋钊：完成了剩余数据的整合，整合了user_skill,need skill,do_work表数据。
+3. 谢厚：完成了后端剩余功能，使用postman对所有接口进行了一遍测试并debug。
