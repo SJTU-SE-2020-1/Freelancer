@@ -43,3 +43,6 @@
 2. 蒋钊：完成了剩余数据的整合，整合了user_skill,need skill,do_work表数据。
 3. 谢厚：完成了后端剩余功能，使用postman对所有接口进行了一遍测试并debug。
 4. 张澳：完成主页，个人界面，对与样式表不起作用的问题找到了解决办法，主要页面构建基本完成。
+
+## Week2-day2总结
+1. 谢厚：后端测试类的编写（user，admin的controller层和dao层）。
