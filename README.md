@@ -52,3 +52,4 @@
 
 ## Week2-day4总结
 1. 谢厚：userController测试，user，admin部分测试文档。
+2. 郑世民：继续后端junit测试，完成测试文档。
