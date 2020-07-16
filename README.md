@@ -49,3 +49,6 @@
 2. 张澳：前端界面调优，个人假面的雇主/威客板块，jest单元测试的环境配置。
 3. 蒋钊：完成了jest+enzyme前端单元测试的环境配置并熟悉了基本操作。
 4. 郑世民：后端junit测试，work的controller层和dao层。
+
+## Week2-day4总结
+1. 谢厚：userController测试，user，admin部分测试文档。
