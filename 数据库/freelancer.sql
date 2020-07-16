@@ -67,7 +67,7 @@ create table propose_work
    u_id                 int not null,
    w_id                 int not null,
    expect_payment       float not null,
-   remark               char(200) not null,
+   remark               text(500) not null,
    primary key (u_id, w_id)
 );
 
