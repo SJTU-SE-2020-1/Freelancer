@@ -54,3 +54,4 @@
 1. 谢厚：userController测试，user，admin部分测试文档。
 2. 郑世民：继续后端junit测试，完成部分测试文档。
 3. 张澳：初步测试与后台数据进行联动的问题，发送接收请求以及后端响应的处理，发现后端有接口会出现返回数据不能转化为json字符的问题（getuserinfo）：解决办法，去除user实体类中@JsonIdentityInfo的注解
+4.蒋钊：开始进行前端测试，用jest+enzyme测试了loginForm中的组件的渲染和输入部分。
