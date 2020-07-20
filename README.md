@@ -64,4 +64,5 @@
 4. 谢厚：后端使用junit对user的controller、dao层测试，完善测试。
 
 ## Week3-day1总结
-1.蒋钊：完成了端对端调试react-cypress相关环境的配置并了解了基本操作。
+1. 蒋钊：完成了端对端调试react-cypress相关环境的配置并了解了基本操作。
+2. 郑世民：了解spring.security,增强后端安全性。
