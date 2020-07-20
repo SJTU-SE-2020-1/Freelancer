@@ -60,3 +60,4 @@
 ## Week2-day5总结
 1. 蒋钊：完成了loginform前端组件的后续单元测试以及测试文档。
 2. 张澳：对前端的一些bug进行修复，同时对tasklist的界面显示做了一定的调整，增加了页脚，对description数据进行了解析
+3. 郑世民：后端使用junit对work的controller、dao层测试，完善测试。
