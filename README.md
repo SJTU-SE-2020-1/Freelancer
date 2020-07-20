@@ -57,4 +57,5 @@
 4. 蒋钊：开始进行前端测试，用jest+enzyme测试了loginForm中的组件的渲染和输入部分。
 
 ## Week2-day5总结
-1.蒋钊：完成了loginform前端组件的后续单元测试以及测试文档。
+1. 蒋钊：完成了loginform前端组件的后续单元测试以及测试文档。
+2. 郑世民：后端使用junit对work的controller、dao层测试，完善测试。
