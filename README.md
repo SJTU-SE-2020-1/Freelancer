@@ -62,3 +62,6 @@
 2. 张澳：对前端的一些bug进行修复，同时对tasklist的界面显示做了一定的调整，增加了页脚，对description数据进行了解析
 3. 郑世民：后端使用junit对work的controller、dao层测试，完善测试。
 4. 谢厚：后端使用junit对user的controller、dao层测试，完善测试。
+
+## Week3-day1总结
+1.蒋钊：完成了端对端调试react-cypress相关环境的配置并了解了基本操作。
