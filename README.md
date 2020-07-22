@@ -74,3 +74,6 @@
 2. 谢厚：对后端进行功能拆分，是模块间相互独立。
 3. 张澳：协助查询spring-security使用的相关资料，对于tasklist的展示的界面增添筛选的部件，完成个人相关work查询的接口
 4. 郑世民：研究spring security的 authentication 和 authority。
+
+## Week3-day3总结
+1. 郑世民：spring security authentication 定制UsernamePasswordAuthenticationFilter使spring scurity接受前端json，明天开始authority。
