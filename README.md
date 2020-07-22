@@ -77,7 +77,7 @@
 
 ## Week3-day3总结
 1. 郑世民：spring security authentication 定制UsernamePasswordAuthenticationFilter使spring scurity接受前端json，明天开始authority。
-   [JSON Authencation](https://stackoverflow.com/questions/19500332/spring-security-and-json-authentication)
-   [Core Security Filters](https://docs.spring.io/spring-security/site/docs/3.0.x/reference/core-web-filters.html)
-   [BasicAuthencationFilter](https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.html)
-   [Spring security application/json](https://www.jianshu.com/p/6df55b0cbbbe)
+1.1   [JSON Authencation](https://stackoverflow.com/questions/19500332/spring-security-and-json-authentication)
+1.2   [Core Security Filters](https://docs.spring.io/spring-security/site/docs/3.0.x/reference/core-web-filters.html)
+1.3   [BasicAuthencationFilter](https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.html)
+1.4   [Spring security application/json](https://www.jianshu.com/p/6df55b0cbbbe)
