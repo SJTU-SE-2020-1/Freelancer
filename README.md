@@ -71,7 +71,7 @@
 
 ## Week3-day2总结
 1. 蒋钊：尝试了react-cypress端对端测试的一些基本操作。
-2. 谢厚：对后端进行功能拆分，是模块间相互独立。
+2. 谢厚：对后端进行功能拆分，使模块间相互独立。
 3. 张澳：协助查询spring-security使用的相关资料，对于tasklist的展示的界面增添筛选的部件，完成个人相关work查询的接口
 4. 郑世民：研究spring security的 authentication 和 authority。
 
@@ -82,4 +82,5 @@
 	3. [BasicAuthencationFilter](https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.html)
 	4. [Spring security application/json](https://www.jianshu.com/p/6df55b0cbbbe)
 
-2.蒋钊：利用react-cypress测试了一些如登录 ，后端数据提取等简单业务，实现初始页面。
+2. 蒋钊：利用react-cypress测试了一些如登录 ，后端数据提取等简单业务，实现初始页面。
+3. 谢厚：增加work与skill和发布者相关联信息的接口，并使之尽量在service层互相独立。
