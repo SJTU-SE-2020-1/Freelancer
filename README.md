@@ -81,3 +81,4 @@
 	2. [Core Security Filters](https://docs.spring.io/spring-security/site/docs/3.0.x/reference/core-web-filters.html)
 	3. [BasicAuthencationFilter](https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.html)
 	4. [Spring security application/json](https://www.jianshu.com/p/6df55b0cbbbe)
+2.蒋钊：利用react-cypress测试了一些如登录 ，后端数据提取等简单业务，实现初始页面。
