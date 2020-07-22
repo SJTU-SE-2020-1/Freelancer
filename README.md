@@ -73,3 +73,4 @@
 1. 蒋钊：尝试了react-cypress端对端测试的一些基本操作。
 2. 谢厚：对后端进行功能拆分，是模块间相互独立。
 3. 张澳：协助查询spring-security使用的相关资料，对于tasklist的展示的界面增添筛选的部件，完成个人相关work查询的接口
+4. 郑世民：研究spring security的 authentication 和 authority。
