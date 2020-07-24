@@ -90,3 +90,4 @@
 1. 蒋钊：完善了初始（未登录）界面，并用react—cypress对发布任务业务进行了端对端测试。
 2. 张澳：融合业务逻辑，配合security修改前端部分结构，融合初始（未登录）界面，taskdetail界面重绘
 3. 谢厚：完善接口，配置服务器环境。
+4. 郑世民：spring security使用数据库用户信息验证，使用session进行部分的authority。
