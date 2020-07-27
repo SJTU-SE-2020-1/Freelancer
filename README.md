@@ -61,3 +61,43 @@
 1. 蒋钊：完成了loginform前端组件的后续单元测试以及测试文档。
 2. 张澳：对前端的一些bug进行修复，同时对tasklist的界面显示做了一定的调整，增加了页脚，对description数据进行了解析
 3. 郑世民：后端使用junit对work的controller、dao层测试，完善测试。
+4. 谢厚：后端使用junit对user的controller、dao层测试，完善测试。
+
+## Week3-day1总结
+1. 蒋钊：完成了端对端调试react-cypress相关环境的配置并了解了基本操作。
+2. 郑世民：了解spring.security,增强后端安全性。
+3. 谢厚：学习微服务架构。
+4. 张澳：回顾上课视频，cypress环境配置（最后删除已经安装的文件夹后，使用cnpm重装后，正常打开了）
+
+## Week3-day2总结
+1. 蒋钊：尝试了react-cypress端对端测试的一些基本操作。
+2. 谢厚：对后端进行功能拆分，使模块间相互独立。
+3. 张澳：协助查询spring-security使用的相关资料，对于tasklist的展示的界面增添筛选的部件，完成个人相关work查询的接口
+4. 郑世民：研究spring security的 authentication 和 authority。
+
+## Week3-day3总结
+1. 郑世民：spring security authentication 定制UsernamePasswordAuthenticationFilter使spring scurity接受前端json，明天开始authority。
+	1. [JSON Authencation](https://stackoverflow.com/questions/19500332/spring-security-and-json-authentication)
+	2. [Core Security Filters](https://docs.spring.io/spring-security/site/docs/3.0.x/reference/core-web-filters.html)
+	3. [BasicAuthencationFilter](https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.html)
+	4. [Spring security application/json](https://www.jianshu.com/p/6df55b0cbbbe)
+
+2. 蒋钊：利用react-cypress测试了一些如登录 ，后端数据提取等简单业务，实现初始页面。
+3. 谢厚：增加work与skill和发布者相关联信息的接口，并使之尽量在service层互相独立。
+4. 张澳：增加我的项目页面，分为雇主与freelancer不同的显示板块，增加个人信息修改界面
+
+## Week3-day4总结
+1. 蒋钊：完善了初始（未登录）界面，并用react—cypress对发布任务业务进行了端对端测试。
+2. 张澳：融合业务逻辑，配合security修改前端部分结构，融合初始（未登录）界面，taskdetail界面重绘
+3. 谢厚：完善接口，配置服务器环境。
+4. 郑世民：spring security使用数据库用户信息验证，使用session进行部分的authority。
+
+## Week3-day5总结
+1. 蒋钊：完成了发布任务的端对端测试并完成了测试文档。
+2. 张澳：task detail界面设计以及相关后台接口的修改.
+3. 郑世民：增加接口的权限检验。
+4. 谢厚：配置服务器环境。
+
+## Weed4-day1总结
+1. 谢厚：后端加入MongoDB。
+2. 蒋钊：实现管理员的用户管理和任务管理界面。
