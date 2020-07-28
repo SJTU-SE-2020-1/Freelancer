@@ -95,6 +95,7 @@ create table user
    true_name            char(20) not null,
    credit_card          char(20) not null,
    type                 smallint not null,
+   is_banned            smallint not null default 0,
    primary key (u_id)
 );
 
