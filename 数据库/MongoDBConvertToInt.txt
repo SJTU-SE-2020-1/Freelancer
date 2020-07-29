@@ -1,0 +1,4 @@
+db.getCollection('workenclosure').find({'_id' : { $type : 1 }}).forEach(function(x) {
+    x._id = NumberInt(x._id);
+    db.getCollection('workenclosure').save(x);
+})
